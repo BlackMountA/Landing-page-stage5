@@ -7,10 +7,77 @@
   width: 86%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav-items__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
 }
 .nav-items__links {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 27px;
 }
+
 .nav-items__link {
   text-decoration: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* Grey/900 */
+
+  color: #161518;
+}
+
+.header__search-bar--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+.header__search-bar {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e8e7ea;
+  gap: 16px;
+}
+.search-icon__container {
+  width: 20px;
+  height: 20px;
+}
+input {
+  padding: 20px 0;
+}
+input::placeholder {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* Grey/900 */
+
+  color: #161518;
+
+  opacity: 0.4;
 }

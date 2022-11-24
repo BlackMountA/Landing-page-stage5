@@ -2,7 +2,9 @@
 // import { CiSearch } from 'react-icons/ci';
 // import { Link } from 'react-router-dom';
 import '../styles/Header.css'
+import SearchIcon from './assets/SearchIcon.svg'
 // import MobileHeaderToggle from './MobileHeaderToggle';
+import CompanyLogo from './assets/CompanyLogo.png'
 
 export default function Header() {
 //   const [toggle, setToggle] = useState(true);
@@ -13,10 +15,10 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div>
-        <img src="logo.png" alt="logo" />
-      </div>
       <div className="nav-items__container">
+      <div className=''>
+        <img src={CompanyLogo} alt="logo" />
+      </div>
         <ul className="nav-items__links">
           <li>
             <a href="/" className="nav-items__link">About Us</a>
@@ -28,9 +30,15 @@ export default function Header() {
             <a href="/" className="nav-items__link">For Business</a>
           </li>
         </ul>
-        <label htmlFor="search" className="header__search-input">
-          <input type="text" id="search" placeholder="Search for city" className="header__search-input" />
-          {/* <CiSearch className="absolute text-2xl transform -translate-y-1/2 top-1/2 left-4" /> */}
+      </div>
+      <div className='header__search-bar--container'>
+        <label htmlFor="search" >
+          <div className="header__search-bar">
+          <div className = 'search-icon__container'>
+            <img src={SearchIcon} alt='search icon' />
+            </div>
+            <input type="text" id="search" placeholder="Search for city" className="header__search-input" />
+            </div>
         </label>
         <button type="button" className="nav-cta__btn">Sign up</button>
       </div>
