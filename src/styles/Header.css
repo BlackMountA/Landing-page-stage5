@@ -3,3 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+.header {
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+}
+.nav-items__links {
+  list-style: none;
+}
+.nav-items__link {
+  text-decoration: none;
+}
