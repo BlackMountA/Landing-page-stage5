@@ -1,10 +1,16 @@
 // import React, { useRef, useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
-// import Locations from '../components/Locations';
+import Locations from '../Pages/Locations';
 import '../styles/Home.css';
 import AppleIcon from '../components/assets/app-store.png' 
 import PlaystoreIcon from '../components/assets/google-play.png'
 import AlertcircleIcon from '../components/assets/alert-circle.png'
+import ScatteradThunderstorm from '../components/assets/Scatterad-thunderstorm.png'
+// import Phones from '../components/assets/Phones.png'
+import Fall from '../components/assets/fall.png'
+import Globalization from '../components/assets/Globalization.png'
+
+
 
 export default function Home() {
 //   const slider = useRef(null);
@@ -24,18 +30,18 @@ export default function Home() {
 
     <div id="home">
       <header className="landing_header">
-        <div className="landing_sections_wrapper">
+        <div className="landing_header_wrapper">
           <div className="landing_header_content_container">
             <div className="landing_weather_brief">
-              {/* <img src="/Home/outline.svg" alt="" /> */}
+              <img src={ScatteradThunderstorm} alt="" />
               <p>clear</p>
             </div>
             <h1 className="landing_header_message">Expect rain and scattered thunderstorms by 12:00pm.</h1>
-            <div className="landing_warning">
+            <div className="landing__header--warning">
               <img src={AlertcircleIcon} alt=" Alert circle Icon" />
               <p>There is a high risk of flooding in your area</p>
             </div>
-            <a href="/dashboard">
+            <a href="/">
               View more
             </a>
           </div>
@@ -54,10 +60,11 @@ export default function Home() {
         >
           <div className="landing_locations_header">
             <h3 className="landing_header_md">Popular locations</h3>
-            <h6>upated a minute ago</h6>
+            <h6>updated a minute ago</h6>
           </div>
           <p>Weather reports of some popular locations in Nigeria</p>
-          {/* <div ref={slider} className="landing_locations_container">
+          <div className="landing_locations_container">
+            {/* ref={slider}  */}
             <Locations
               forecast="Expect rain and scattered thunderstorms by 12:00pm."
               state="CLOUDY"
@@ -73,7 +80,7 @@ export default function Home() {
               state="RAINY"
               location="Kaduna, Nigeria"
             />
-          </div> */}
+          </div>
           {/* <div className="landing_scroll_indicator">
             <div style={{ backgroundColor: curr === 0 ? 'var(--primary-color)' : '' }}>{' '}</div>
             <div style={{ backgroundColor: curr === 1 ? 'var(--primary-color)' : '' }}>{' '}</div>
@@ -121,14 +128,14 @@ export default function Home() {
                   Get started
                 </a>
                 <div style={{ width: '100%', paddingTop: '24px' }}>
-                  {/* <img
-                    src="/Home/globe.png"
+                  <img
+                    src={Globalization}
                     alt=""
                     style={{
                       marginInline: 'auto',
                       width: '80%',
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
             </div>
@@ -147,18 +154,18 @@ export default function Home() {
                   uncomplicated capabilities that Weathery offers to convey
                   your everyday weather condition!
                 </p>
-                <a href="/signup" className="landing_a_button">
+                <a href="/signup" className="landing_link_button">
                   Get started
                 </a>
                 <div style={{ width: '100%', paddingTop: '24px' }}>
-                  {/* <img
-                    src="/Home/fall.png"
+                  <img
+                    src={Fall}
                     alt=""
                     style={{
                       marginInline: 'auto',
                       width: '80%',
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
             </div>
@@ -185,10 +192,10 @@ export default function Home() {
     </div>
   <div className="landing_phones_wrapper">
             <div className="landing_phones_container">
-              {/* <img src="/Home/phones.png" alt="" />
-              <img src="/Home/phones.png" alt="" />
-              <img src="/Home/phones.png" alt="" />
-              <img src="/Home/phones.png" alt="" /> */}
+              {/* <img src={Phones} alt="" />
+              <img src={Phones} alt="" />
+              <img src={Phones} alt="" />
+              <img src={Phones} alt="" /> */}
             </div>
           </div>
         </section>

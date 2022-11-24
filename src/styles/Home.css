@@ -10,19 +10,23 @@
   background-image: url("../components/assets/Bg.png");
   background-size: cover;
   color: white;
-  padding-block: 235px;
+  /* padding-block: 235px; */
 }
 
-.landing_sections_wrapper {
+.landing_header_wrapper {
   display: flex;
   flex-direction: column;
-  width: min(100%, 1400px);
+  /* width: min(100%, 1400px); */
   align-items: center;
-  gap: 100px;
-  margin-inline: auto;
-  padding-inline: 88px;
+  /* gap: 100px; */
+  /* margin-inline: auto;
+  padding-inline: 88px; */
 }
-
+@media (max-width: 800px) {
+  .landing_header_wrapper {
+    padding: 24px;
+  }
+}
 .landing_header_content_container {
   display: flex;
   width: min(100%, 834px);
@@ -41,6 +45,8 @@
   gap: 8px;
   border: 1px solid white;
   border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .landing_weather_brief {
@@ -54,6 +60,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 140%;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -66,12 +73,13 @@
   font-feature-settings: "liga" off;
 }
 
-.landing_warning {
+.landing__header--warning {
   display: flex;
   padding: 8px 16px;
   gap: 12px;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 40px;
+  align-items: center;
 }
 
 .landing_locations_header {
@@ -175,7 +183,8 @@
   line-height: 24px;
   letter-spacing: 0.01em;
   font-feature-settings: "tnum" on, "lnum" on;
-  color: var(--primary-color);
+
+  text-decoration: none;
 }
 
 .landing_features_and_globe {
@@ -288,7 +297,7 @@
   margin-top: 30px;
 } */
 
-.landing_phones_wrapper {
+/* .landing_phones_wrapper {
   position: relative;
   width: 800px;
   height: auto;
@@ -325,10 +334,10 @@
 
 .landing_phones_container img:last-child {
   grid-area: 2 / 3 / 4 / 4;
-}
+} */
 /* 
 @media screen and (max-width: 768px) {
-  .landing_sections_wrapper {
+  .landing_header_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,6 +409,9 @@
   background: #fdead7;
   border-radius: 16px;
   margin-top: 78px;
+
+  margin-bottom: 100px;
+  overflow: hidden;
 }
 @media (max-width: 800px) {
   .faqs__mobile--app {
