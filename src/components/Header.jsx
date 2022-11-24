@@ -5,6 +5,7 @@ import '../styles/Header.css'
 import SearchIcon from './assets/SearchIcon.svg'
 // import MobileHeaderToggle from './MobileHeaderToggle';
 import CompanyLogo from './assets/CompanyLogo.png'
+import ArrowDown from './assets/ArrowDownBtn.svg'
 
 export default function Header() {
 //   const [toggle, setToggle] = useState(true);
@@ -32,15 +33,26 @@ export default function Header() {
         </ul>
       </div>
       <div className='header__search-bar--container'>
-        <label htmlFor="search" >
           <div className="header__search-bar">
-          <div className = 'search-icon__container'>
+          {/* <div className = 'search-icon__container'> */}
             <img src={SearchIcon} alt='search icon' />
-            </div>
-            <input type="text" id="search" placeholder="Search for city" className="header__search-input" />
-            </div>
-        </label>
-        <button type="button" className="nav-cta__btn">Sign up</button>
+            {/* </div> */}
+            <input type="text"  placeholder="Search for city" className="header__search-input" />
+        </div>
+        
+
+
+
+
+
+        <div className='header__search-btn'>
+        <img
+                src={ArrowDown}
+                alt="arrow down button"
+                className="header__arrowdown--icon"
+              />
+          <button type="button" className="nav-cta__btn">Sign up</button>
+          </div>
       </div>
     </header>
   );

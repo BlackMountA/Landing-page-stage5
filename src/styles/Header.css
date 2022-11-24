@@ -44,11 +44,33 @@
 }
 
 .header__search-bar--container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
+  gap: 24px; */
+}
+.header__search-bar {
+  /* display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e8e7ea;
+  gap: 16px; */
+}
+.search-icon__container {
+  /* width: 20px;
+  height: 20px; */
+}
+input {
+  /* padding: 20px 0; */
+}
+
+.header__search-bar--container {
+  display: flex;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .header__search-bar {
   display: flex;
@@ -58,26 +80,56 @@
   border-bottom: 1px solid #e8e7ea;
   gap: 16px;
 }
-.search-icon__container {
-  width: 20px;
-  height: 20px;
-}
-input {
-  padding: 20px 0;
-}
-input::placeholder {
+.header__search-bar input {
+  padding: 12px;
+  /* height: 30px; */
+  border: none;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  /* identical to box height, or 133% */
-
-  text-align: center;
-
-  /* Grey/900 */
-
-  color: #161518;
+  /* padding-left: 16px; */
+  color: #301104;
 
   opacity: 0.4;
+}
+.header__search-bar input:focus {
+  outline: none;
+}
+.header__search-bar input::placeholder {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* padding-left: 16px; */
+  color: #301104;
+
+  opacity: 0.4;
+}
+.header__search-btn {
+  display: flex;
+  align-items: center;
+  /* width: 31%; */
+  justify-content: flex-end;
+}
+.header__arrowdown--icon {
+  padding: 12px 8px;
+  opacity: 0.4;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.nav-cta__btn {
+  padding: 12px 24px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  background: #f05513;
+  border-radius: 8px;
 }
