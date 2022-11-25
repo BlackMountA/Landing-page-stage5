@@ -12,12 +12,9 @@ export default function Footer() {
           <div className="footer__nav">
             <img src={CompanyLogo} className="footer__logo" alt="logo" />
             <div className="footer__links">
-              <a href="/" className="footer__link">Culture</a>
-              <a href="/" className="footer__link">Careers</a>
+              <a href="/" className="footer__link">About Us</a>
               <a href="/" className="footer__link">Weather News</a>
-              <a href="/" className="footer__link">For Business</a>
               <a href="/" className="footer__link">FAQs</a>
-              <a href="/" className="footer__link">Contact Us</a>
             </div>
           </div>
           <div className="footer__app">
@@ -36,7 +33,7 @@ export default function Footer() {
               <span className="">English</span>
             </span>
             <span className="">
-              <img src="icons/uk-flag.png" alt="uk flag" />
+              {/* <img src="icons/uk-flag.png" alt="uk flag" /> */}
               <span className="">United Kingdom</span>
             </span>
             <span className="">
