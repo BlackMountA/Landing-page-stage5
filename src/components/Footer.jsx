@@ -1,6 +1,8 @@
 import PlaystoreIcon from "../components/assets/google-play.png";
 import AppleIcon from "../components/assets/app-store.png";
 import CompanyLogo from './assets/CompanyLogo.png'
+import FooterCompanyLogo from './assets/FooterCompanyLogo.png'
+
 import '../styles/Footer.css'
 
 
@@ -10,11 +12,12 @@ export default function Footer() {
           <div className="footer">
         <div className="first-section">
           <div className="footer__nav">
-            <img src={CompanyLogo} className="footer__logo" alt="logo" />
+            <img src={FooterCompanyLogo} className="footer__logo" alt="logo" />
             <div className="footer__links">
               <a href="/" className="footer__link">About Us</a>
               <a href="/" className="footer__link">Weather News</a>
               <a href="/" className="footer__link">FAQs</a>
+
             </div>
           </div>
           <div className="footer__app">
