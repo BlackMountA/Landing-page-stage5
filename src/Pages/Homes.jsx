@@ -5,13 +5,15 @@ import "../styles/Home.css";
 import AppleIcon from "../components/assets/app-store.png";
 import PlaystoreIcon from "../components/assets/google-play.png";
 // import Phones from '../components/assets/Phones.png'
-import Appinterface from "../components/assets/Appinterface1.jpg";
+import Appinterface from "../components/assets/Appinterface.jpg";
 
 // import Fall from "../components/assets/fall.png";
 import Globalization from "../components/assets/Globalization.png";
 
 export default function Home() {
-    const slider = useRef(null);
+  const slider = useRef(null);
+    // const slider = useRef(null);
+  
   const [curr, setCurr] = useState(0);
 
   useEffect(() => {
@@ -117,7 +119,9 @@ export default function Home() {
             </div>
 
               <div className="landing_globe landing_globe2">
-                
+                <h3 className="landing__features--title">
+                  Be prepared for weather change
+                </h3>
                   <img src={Appinterface} alt='App interface' className="landing_globe--app" />
                   
               {/* <div className="landing__features--container2">

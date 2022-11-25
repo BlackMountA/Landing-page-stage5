@@ -53,6 +53,7 @@
   line-height: 72px;
   /* text-transform: uppercase; */
   color: #fff;
+  /* width: 700px; */
   text-align: center;
 }
 @media (max-width: 750px) {
@@ -473,8 +474,7 @@
     margin-left: 0;
   }
 }
-@media (max-width: 600px) {
-}
+
 .landing__mobile--app--heading {
   font-family: "Outfit";
   font-style: normal;
@@ -493,6 +493,24 @@
   width: 80%;
   font-feature-settings: "tnum" on, "lnum" on;
   color: #161518;
+}
+@media (max-width: 600px) {
+  .landing__mobile--app--text-container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 0;
+  }
+  .landing__mobile--app--sub-heading-text {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    width: 80%;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #161518;
+  }
 }
 .landing__mobile--app--heading--description {
   font-family: "Outfit";
